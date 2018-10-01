@@ -43,6 +43,7 @@
                             state =     S_QUOTED;
                             field =     '';
                             pos++;
+                            break;
                         case RECORD_SEP:
                             record.push( field );
                             field =     '';
