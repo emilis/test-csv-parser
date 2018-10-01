@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf8">
+        <title>CSV Parser</title>
+        <link rel="stylesheet" type="text/css" href="./index.css">
+    </head>
+    <body>
+        <div class="csv-parser">
+            <h1>CSV Parser</h1>
+            <form class="csv-parser-input">
+                <textarea name="csv" class="csv"></textarea>
+                <label class="csv-header-field">
+                    <input type="checkbox" name="has-header" class="csv-has-header">
+                    The CSV has a header row.
+                </label>
+                <button type="submit">Parse CSV</button>
+            </form>
+            <div class="csv-parser-output">
+                <h2>Output:</h2>
+                <div class="csv-parser-error"></div>
+                <table class="csv-parser-output-table"></table>
+            </div>
+        </div>
+        <script src="./csv-parser.js"></script>
+        <script src="./index.js"></script>
+    </body>
+</html>
